@@ -45,7 +45,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenOrder }) => {
           
           <div className="flex flex-wrap gap-4">
             <Button variant="primary" onClick={onOpenOrder}>Get in touch</Button>
-            <a href="#portfolio"><Button variant="secondary">View Portfolio</Button></a>
+            <a href="#portfolio" className="text-inherit"><Button variant="secondary">View Portfolio</Button></a>
           </div>
 
           <div className="pt-8">

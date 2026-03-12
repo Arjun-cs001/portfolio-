@@ -12,7 +12,10 @@ import { FallingPens } from './components/FallingPens';
 
 function App() {
   const [isOrderModalOpen, setIsOrderModalOpen] = useState(false);
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState<boolean>(() => {
+    const saved = localStorage.getItem('theme');
+    return saved === null ? true : saved === 'dark';
+  });
 
   useEffect(() => {
     if (isDark) {
@@ -24,7 +27,11 @@ function App() {
 
   const openOrderModal = () => setIsOrderModalOpen(true);
   const closeOrderModal = () => setIsOrderModalOpen(false);
-  const toggleTheme = () => setIsDark(prev => !prev);
+  const toggleTheme = () => setIsDark(prev => {
+    const next = !prev;
+    localStorage.setItem('theme', next ? 'dark' : 'light');
+    return next;
+  });
 
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-950 flex flex-col font-sans transition-colors duration-300">
