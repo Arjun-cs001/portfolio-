@@ -5,17 +5,17 @@ import { Quote } from 'lucide-react';
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    content: "Aswin is the most creative designer I have worked with! Sometimes as a creator you hit a creative wall and need help getting some ideas, going to Aswin never fails. His passion for designing is unlike anyone I have met.",
-    author: "Patrick Zeinali",
-    role: "YouTuber (7M)",
-    avatar: "https://picsum.photos/seed/patrick/50"
+    content: "Best thumbnail designer in the biz. Seriously do not like working with anyone else. You won't find someone more obsessed with their craft than Aswin. He just gets it!",
+    author: "Techno Gamerz",
+    role: "YouTuber (50.6M)",
+    avatar: "https://yt3.googleusercontent.com/ytc/AIdro_mSh0doIgogNhhpzLcRYEMRorZefkBUe_6LYOWnLgzSyFc=s160-c-k-c0x00ffffff-no-rj"
   },
   {
     id: 2,
-    content: "Best thumbnail designer in the biz. Seriously do not like working with anyone else. You won't find someone more obsessed with their craft than Aswin. He just gets it!",
-    author: "NachoAverageFinds",
-    role: "YouTuber (200K)",
-    avatar: "https://picsum.photos/seed/nacho/50"
+    content: "Aswin is the most creative designer I have worked with! Sometimes as a creator you hit a creative wall and need help getting some ideas, going to Aswin never fails. His passion for designing is unlike anyone I have met.",
+    author: "RakshXD",
+    role: "YouTuber (1.4M)",
+    avatar: "https://yt3.googleusercontent.com/afOhT_Za7YiRHhhaP_ZfDgdb4pQDQcjz0UiBSJrdMKEQprIec87ZfRwSNI34ox7zf6WqHmhN=s160-c-k-c0x00ffffff-no-rj"
   },
   {
     id: 3,
