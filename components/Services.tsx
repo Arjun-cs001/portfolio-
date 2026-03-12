@@ -17,20 +17,20 @@ const services = [
 
 export const Services: React.FC = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-zinc-950 to-[#1a0b2e] border-t border-zinc-900">
+    <section className="py-24 bg-white dark:bg-gradient-to-b dark:from-zinc-950 dark:to-[#1a0b2e] border-t border-gray-200 dark:border-zinc-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4">
         
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white">Service I Offer</h2>
+          <h2 className="text-4xl md:text-5xl font-black text-zinc-900 dark:text-white">Service I Offer</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 hover:border-[#8c59e4] transition-all duration-300 group flex flex-col">
+            <div key={index} className="bg-gray-50 dark:bg-zinc-900 rounded-2xl overflow-hidden border border-gray-200 dark:border-zinc-800 hover:border-[#8c59e4] transition-all duration-300 group flex flex-col shadow-sm dark:shadow-none">
               {/* Content */}
               <div className="p-8 flex-grow flex flex-col">
-                <h3 className="text-xl font-bold text-white mb-4">{service.title}</h3>
-                <div className="space-y-4 text-zinc-400 text-sm leading-relaxed">
+                <h3 className="text-xl font-bold text-zinc-900 dark:text-white mb-4">{service.title}</h3>
+                <div className="space-y-4 text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed">
                   {service.description.split('\n\n').map((paragraph, i) => (
                     <p key={i}>
                       {paragraph}

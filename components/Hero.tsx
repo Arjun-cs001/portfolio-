@@ -25,7 +25,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenOrder }) => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
               </span>
-              <span className="text-[10px] sm:text-xs font-black tracking-[0.2em] uppercase text-white">Open for Projects</span>
+              <span className="text-[10px] sm:text-xs font-black tracking-[0.2em] uppercase text-zinc-800 dark:text-white">Open for Projects</span>
           </div>
       </div>
 
@@ -33,13 +33,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenOrder }) => {
         
         {/* Left Content */}
         <div className="space-y-8">
-          <h1 className="text-5xl sm:text-6xl font-black leading-tight text-white">
+          <h1 className="text-5xl sm:text-6xl font-black leading-tight text-zinc-900 dark:text-white">
             You only get one <br />
             <span className="text-[#8c59e4]">first impression.</span> <br />
             Make it count.
           </h1>
           
-          <p className="text-xl text-zinc-400 max-w-lg leading-relaxed">
+          <p className="text-xl text-zinc-500 dark:text-zinc-400 max-w-lg leading-relaxed">
             On YouTube, attention is tough to catch. Thankfully, you found an expert who knows exactly how to stop the scroll.
           </p>
           
@@ -49,7 +49,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenOrder }) => {
           </div>
 
           <div className="pt-8">
-            <p className="text-sm text-zinc-500 font-semibold mb-3">Trusted by:</p>
+            <p className="text-sm text-zinc-500 dark:text-zinc-500 font-semibold mb-3">Trusted by:</p>
             <div className="flex items-center gap-4 flex-wrap">
                {/* Client Avatars */}
                {[
@@ -103,13 +103,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenOrder }) => {
             </div>
 
              {/* Floating stats card */}
-             <div className="absolute -bottom-6 -left-6 z-20 bg-[#1A1A1A] p-4 rounded-xl shadow-xl border border-zinc-700 w-48 animate-pulse-slow">
+             <div className="absolute -bottom-6 -left-6 z-20 bg-white dark:bg-[#1A1A1A] p-4 rounded-xl shadow-xl border border-zinc-200 dark:border-zinc-700 w-48 animate-pulse-slow">
                 <div className="flex justify-between items-center mb-2">
-                    <span className="text-zinc-400 text-xs">Views Gained</span>
+                    <span className="text-zinc-500 dark:text-zinc-400 text-xs">Views Gained</span>
                     <span className="text-green-500 text-xs">+124%</span>
                 </div>
-                <div className="text-2xl font-bold text-white">2.4M+</div>
-                <div className="w-full bg-zinc-800 h-1 mt-2 rounded-full overflow-hidden">
+                <div className="text-2xl font-bold text-zinc-900 dark:text-white">2.4M+</div>
+                <div className="w-full bg-zinc-200 dark:bg-zinc-800 h-1 mt-2 rounded-full overflow-hidden">
                     <div className="bg-[#8c59e4] h-full w-[70%]"></div>
                 </div>
             </div>

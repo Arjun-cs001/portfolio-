@@ -25,7 +25,7 @@ const steps = [
 
 export const WhyHire: React.FC = () => {
   return (
-    <section id="story" className="py-24 bg-zinc-950 text-white relative border-t border-zinc-900">
+    <section id="story" className="py-24 bg-gray-50 dark:bg-zinc-950 text-zinc-900 dark:text-white relative border-t border-gray-200 dark:border-zinc-900 transition-colors duration-300">
        <div className="max-w-7xl mx-auto px-4">
           
           <div className="text-center mb-20">
@@ -41,20 +41,20 @@ export const WhyHire: React.FC = () => {
 
           <div className="relative">
              {/* Connecting Line (Desktop only) */}
-             <div className="hidden md:block absolute top-10 left-[10%] right-[10%] h-0.5 bg-zinc-800 -z-0"></div>
+             <div className="hidden md:block absolute top-10 left-[10%] right-[10%] h-0.5 bg-gray-200 dark:bg-zinc-800 -z-0"></div>
 
              <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-6">
                 {steps.map((step) => (
                    <div key={step.id} className="relative z-10 flex flex-col items-center text-center group">
                       
                       {/* Number Circle */}
-                      <div className="w-20 h-20 rounded-full bg-[#8c59e4] text-white flex items-center justify-center text-3xl font-black mb-6 shadow-[0_0_20px_rgba(140,89,228,0.4)] group-hover:scale-110 transition-transform duration-300 border-4 border-zinc-950 relative">
+                      <div className="w-20 h-20 rounded-full bg-[#8c59e4] text-white flex items-center justify-center text-3xl font-black mb-6 shadow-[0_0_20px_rgba(140,89,228,0.4)] group-hover:scale-110 transition-transform duration-300 border-4 border-gray-50 dark:border-zinc-950 relative">
                          {step.id}
                       </div>
 
                       {/* Content */}
                       <h3 className="text-2xl font-bold mb-3">{step.title}</h3>
-                      <p className="text-zinc-400 text-sm leading-relaxed max-w-[250px] mx-auto">
+                      <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed max-w-[250px] mx-auto">
                          {step.description}
                       </p>
                    </div>

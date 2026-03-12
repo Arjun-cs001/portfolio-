@@ -19,19 +19,19 @@ export const FAQ: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-zinc-950 px-4 border-t border-zinc-900">
+    <section className="py-24 bg-gray-50 dark:bg-zinc-950 px-4 border-t border-gray-200 dark:border-zinc-900 transition-colors duration-300">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-black text-center text-[#8c59e4] mb-4">Frequently Asked Questions</h2>
-        <p className="text-zinc-400 text-center mb-12 text-sm">More than half of my inbox revolves around these questions, so I've compiled some answers here.</p>
+        <p className="text-zinc-500 dark:text-zinc-400 text-center mb-12 text-sm">More than half of my inbox revolves around these questions, so I've compiled some answers here.</p>
         
         <div className="space-y-4">
           {faqData.map((item) => (
-            <div key={item.id} className="border-b border-zinc-800 pb-4">
+            <div key={item.id} className="border-b border-gray-200 dark:border-zinc-800 pb-4">
               <button 
                 onClick={() => toggle(item.id)}
                 className="w-full flex justify-between items-center py-2 text-left hover:text-[#8c59e4] transition-colors focus:outline-none"
               >
-                <span className="font-bold text-white text-lg">{item.question}</span>
+                <span className="font-bold text-zinc-900 dark:text-white text-lg">{item.question}</span>
                 <span className="text-[#8c59e4]">
                   {openId === item.id ? <Minus size={20} /> : <Plus size={20} />}
                 </span>
@@ -39,7 +39,7 @@ export const FAQ: React.FC = () => {
               <div 
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${openId === item.id ? 'max-h-48 opacity-100 mt-2' : 'max-h-0 opacity-0'}`}
               >
-                <p className="text-zinc-400 text-sm leading-relaxed pr-8 pb-2">
+                <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed pr-8 pb-2">
                   {item.answer}
                 </p>
               </div>

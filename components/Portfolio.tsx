@@ -53,7 +53,7 @@ const MarqueeRow: React.FC<{
 
 export const Portfolio: React.FC = () => {
   return (
-    <section id="portfolio" className="py-24 bg-black overflow-hidden relative border-t border-zinc-900">
+    <section id="portfolio" className="py-24 bg-zinc-900 dark:bg-black overflow-hidden relative border-t border-zinc-800 dark:border-zinc-900 transition-colors duration-300">
       
       <div className="flex flex-col gap-6">
         {/* Layer 2: Right to Left (Reversed) - kept in middle */}
@@ -68,8 +68,8 @@ export const Portfolio: React.FC = () => {
       </div>
       
       {/* Overlay Gradients to soften edges */}
-      <div className="absolute inset-y-0 left-0 w-20 sm:w-40 bg-gradient-to-r from-black to-transparent z-20 pointer-events-none"></div>
-      <div className="absolute inset-y-0 right-0 w-20 sm:w-40 bg-gradient-to-l from-black to-transparent z-20 pointer-events-none"></div>
+      <div className="absolute inset-y-0 left-0 w-20 sm:w-40 bg-gradient-to-r from-zinc-900 dark:from-black to-transparent z-20 pointer-events-none transition-colors duration-300"></div>
+      <div className="absolute inset-y-0 right-0 w-20 sm:w-40 bg-gradient-to-l from-zinc-900 dark:from-black to-transparent z-20 pointer-events-none transition-colors duration-300"></div>
 
     </section>
   );
