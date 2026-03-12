@@ -8,6 +8,7 @@ import { Footer } from './components/Footer';
 import { OrderModal } from './components/OrderModal';
 import { WhyHire } from './components/WhyHire';
 import { Services } from './components/Services';
+import { FallingPens } from './components/FallingPens';
 
 function App() {
   const [isOrderModalOpen, setIsOrderModalOpen] = useState(false);
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-950 flex flex-col font-sans transition-colors duration-300">
+      <FallingPens />
       <Header onOpenOrder={openOrderModal} isDark={isDark} toggleTheme={toggleTheme} />
       <main className="flex-grow">
         <Hero onOpenOrder={openOrderModal} />
