@@ -20,9 +20,9 @@ const testimonials: Testimonial[] = [
   {
     id: 3,
     content: "I'm always recommending Aswin to people as he produces fantastic thumbnails and actually *cares* about the strategy behind the design, not just what it looks like. Highly recommend!",
-    author: "Jamie Whiffen",
-    role: "YouTube Consultant",
-    avatar: "https://picsum.photos/seed/jamie/50"
+    author: "Tyshon Lawrence",
+    role: "YouTuber (1.49M)",
+    avatar: "https://yt3.googleusercontent.com/hXx61vYViqWc3LqW0yzxcmy9bywYdClW_Yapv1KojdcgNzPNbDUGbATQzh_O5nCw0tF9jKyyJ5U=s160-c-k-c0x00ffffff-no-rj"
   }
 ];
 

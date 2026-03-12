@@ -51,13 +51,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenOrder }) => {
           <div className="pt-8">
             <p className="text-sm text-zinc-500 font-semibold mb-3">Trusted by:</p>
             <div className="flex items-center gap-4 flex-wrap">
-               {/* Placeholders for logos/avatars */}
-               {[1, 2, 3].map((i) => (
+               {/* Client Avatars */}
+               {[
+                 "https://yt3.googleusercontent.com/ytc/AIdro_mSh0doIgogNhhpzLcRYEMRorZefkBUe_6LYOWnLgzSyFc=s160-c-k-c0x00ffffff-no-rj",
+                 "https://yt3.googleusercontent.com/afOhT_Za7YiRHhhaP_ZfDgdb4pQDQcjz0UiBSJrdMKEQprIec87ZfRwSNI34ox7zf6WqHmhN=s160-c-k-c0x00ffffff-no-rj",
+                 "https://yt3.googleusercontent.com/hXx61vYViqWc3LqW0yzxcmy9bywYdClW_Yapv1KojdcgNzPNbDUGbATQzh_O5nCw0tF9jKyyJ5U=s160-c-k-c0x00ffffff-no-rj"
+               ].map((src, i) => (
                  <div key={i} className="w-10 h-10 rounded-full bg-zinc-800 border-2 border-zinc-700 overflow-hidden flex items-center justify-center">
                     <img 
-                      src={`https://picsum.photos/seed/creator${i}/50`} 
-                      alt="Creator" 
-                      className="w-full h-full object-cover opacity-80"
+                      src={src} 
+                      alt={`Creator ${i + 1}`} 
+                      className="w-full h-full object-cover"
                       width={40}
                       height={40}
                       loading="lazy"
